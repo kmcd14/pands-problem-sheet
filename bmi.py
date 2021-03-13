@@ -13,7 +13,7 @@ weight = float(input('Now enter your weight in kilograms: '))
 # formula to calculate BMI is kg/m2 
 bmi = weight / (height/100)**2  # changing cm into meters. dividing by 100 because 1m = 100cm
 
-# .2f formats value returned to 2 decimal places. The example output in the Task critera was formatted like this
+# .2f formats value returned to 2 decimal places. The example output in the Task criteria was formatted like this
 print('\n{}, your BMI is {:.2f}.\nPlease refernce the following chart with your result to identify your category: '.format(name, bmi)) 
 print('\n\t- Underweight = < 18.5\n\t- Healthy Weight = 18.5–24.9\n\t- Overweight = 25-29.9\n\t- Obese Class I = 25–29.9\n\t- Obese Class II = 35-39.9\n\t- Obese Class III = > 40') 
 # adding a clickable hyperlink to the HSE website
