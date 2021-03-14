@@ -14,7 +14,6 @@ The seven tasks are as follows:
         - plottask.py
 
 -- 
-
 ## bmi.py
 The aim of this program is to take a users height in centimeters and weight in kilograms and calculate their Body Mass Index (BMI).
 The formula to workout the BMI calculation is as follows; body weight divided by the square of the body height - kg/m². (NHS, 2021).
@@ -23,15 +22,14 @@ I used the HSE's reference guide to identify the different weight categorys (HSE
 As the users height was inputted in centimeters, the program needed to change this to meters. It does this by diving by 100. As 100cm = 1m.
 The example output in the task criteria was formatted to 2 decimal places hence the output of this program matches this.
 
-'''
 $python bmi.py
+'''
+>>> Hello, what is your name? Maeve
+>>> Katie, please enter your height in cm: 167
+>>> Now enter your weight in kilograms: 62
 
-Hello, what is your name? Maeve
-Katie, please enter your height in cm: 167
-Now enter your weight in kilograms: 62
-
-Katie, your BMI is 22.23.
-Please refernce the following chart with your result to identify your category:
+>>> Katie, your BMI is 22.23.
+>>>Please refernce the following chart with your result to identify your category:
 
         - Underweight = < 18.5
         - Healthy Weight = 18.5–24.9
@@ -40,11 +38,30 @@ Please refernce the following chart with your result to identify your category:
         - Obese Class II = 35-39.9
         - Obese Class III = > 40
 
-For more information about BMI and weight management vist the HSE website at: https://tinyurl.com/6uvm5jr3
+>>> For more information about BMI and weight management vist the HSE website at: https://tinyurl.com/6uvm5jr3
 '''
 
+# second_string.py
+The goal of this program is to take an input of a string and print out every second letter in reverse order.
+To achieve this I used slicing. The slice method takes three arguments; [starting value : end value : value to move by] (W3Schools, 2021)
+Since the objective is reverse the full string we don't have to enter specfic start and end values. 
+-1 will always be the last value. By adding it as the third arguments the program will read the string backwards.
+The second part of the task was to output every second letter of the reversed string.
+To achieve this we use slicing again. On the newly revered string we pass 2 as the third arguments. 
+The program will move through the revered string and print every second letter
+
+
+$python second_string.py
+    '''
+    >>>Please enter a sentance: this is an example
+    >>> You have entered:
+                    this is an example
+    >>>Your new string is:
+                    epaen ish
+    '''
 ## References
 HSE. (2021). BMI Chart (Kgs/m2 ) for use with the Weight Management Treatment Algorithm. 
 Available: https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf. Last accessed 14th March 2021.
 NHS. (2021). What is the body mass index (BMI)?. 
 Available: https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/. Last accessed 14th March 2021.
+W3Schools. (2021). Python slice() Function. Available: https://www.w3schools.com/python/ref_func_slice.asp. Last accessed 14th March 2021.
