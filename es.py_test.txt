@@ -1,5 +1,0 @@
-This is a test text file for es.py.
-Es.py must output THE NUMBER of TIMES 'E' appears
-in this or any fiLE that it is ASKED to REad.
-
-plEASe work! I nEEd slEep
