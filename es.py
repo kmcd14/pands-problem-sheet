@@ -1,19 +1,24 @@
 # es.py
-# This program reads in a text file and outputs the number of e's it contains.
-# The program should take the filename from an argument on the command line.
+# This program reads in a text file and outputs the number of times 'e' appears.
+# It will take a filename from an argument on the command line.
 # Author: Katie Mc Donald
 
+# Counter to keep track of the number of times 'e' appears
 e_count = 0
-
-file_to_read = input('Enter the name of the file: ')
+# Gets the user to input the path directory of the text file
+file_to_read = input('Enter the path of the text file you wish to open: ')
+# Assigns the input to a new variable 
 filename = file_to_read
 
+# Opening the variable filename in read mode
 with open(filename, 'r') as f:
+    # Go through each line
      for line in f:
-         # getting rid of whitespace + making all letters lowercase
+         # Getting rid of whitespace and making all letters lowercase so 'E' will be counted. 
          line = line.strip().lower()
-         for word in line:
-            if word == 'e':
-             e_count += 1
+         # Go through every letter in a line 
+         for letter in line:
+            if letter == 'e':
+                e_count += 1 # Adds 1 to the counter total for each 'e' found
              
 print(e_count)
