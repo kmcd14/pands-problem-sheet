@@ -116,13 +116,34 @@ The two methods the program uses are:
         23
         '''
 
+## plottask.py
+This program displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
+Modules used in this program are numpy and matplotlib
+        import numpy as np
+        import matplotlib.pyplot as plt
+To find which points to plot I used numpy. "NumPy is the fundamental Python library for numerical computing." (Stojiljković, 2021). The program passes the range [0, 4] to create a numpy array. NumPy arrays are prefered to a list as they are faster and more efficient than python lists  (NumPy, 2021). 
+I referenced the documentation on matplotlib to style and format the plot (Hunter, J., et. al., 2021). 
+The methods the program uses are: 
+- np.array() creates a numpy array from the range passed to it
+- plt.plot() plots the functions
+- plt.xlabel() and .ylabel() adds labels to the X and Y axes
+- plt.title() adds a title to the  plot
+- plt.legend() adds a legend to the plot 
+- plt.grid() adds a grid to the plot
+- plt.xticks() and .yticks() adds ticks along the X and Y axes
+- plt.show() shows the plot when the program is run. I used this instead of save as the task description didn't state to save the plot.
+
+
 ## References
+Alves, J., Graça, M., Dias, M., Ramos, J. (2005). A linear algebra approach to the conjecture of Collatz. Linear Algebra and its Applications. 394 (0), p277-278.
 Hartnett, Kevin. (2019). Mathematician Proves Huge Result on ‘Dangerous’ Problem. Available: https://www.quantamagazine.org/mathematician-terence-tao-and-the-collatz-conjecture-20191211/. Last accessed 15th March 2021.
 HSE. (2021). BMI Chart (Kgs/m2 ) for use with the Weight Management Treatment Algorithm. 
 Available: https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf. Last accessed 14th March 2021.
-J.F. Alves, M.M. Graça, M.E. Sousa Dias∗ , J. Sousa Ramos. (2005). A linear algebra approach to the conjecture of Collatz. Linear Algebra and its Applications. 394 (0), p277-278.
+Hunter, J., Dale, D., Firing, E., Droettboom, M., et al. (2021). matplotlib.pyplot.plot. Available: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html. Last accessed 15th March 2021.
 NHS. (2021). What is the body mass index (BMI)?.Available: https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/. Last accessed 14th March 2021.
+NumPy. (2021). NumPy: the absolute basics for beginners. Available: https://numpy.org/doc/stable/user/absolute_beginners.html. Last accessed 15th March 2021.
 Python. (2021). datetime — Basic date and time types. Available: https://docs.python.org/3/library/datetime.html. Last accessed 15th March 2021.
 Regmi, S. (2020). Calculating the Square Root of a Number using the  Newton-Raphson Method [A How To Guide]. Available: https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo. Last accessed 15th March 2021.
+Stojiljković, M. (2021). NumPy arange(): How to Use np.arange(). Available: https://realpython.com/how-to-use-numpy-arange/. Last accessed 15th March 2021.
 w3schools. (2021). Python File Open. Available: https://www.w3schools.com/python/python_file_open.asp. Last accessed 15th March 2021.
 W3Schools. (2021). Python slice() Function. Available: https://www.w3schools.com/python/ref_func_slice.asp. Last accessed 14th March 2021.
