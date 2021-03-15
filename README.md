@@ -78,12 +78,26 @@ The name of the program in the task description lead me to researching the colla
         1
         '''
 
+## weekday.py
+This program tells the user whether or not today is a weekday.
+Modules used for this program are datetime. "The datetime module supplies classes for manipulating dates and times." (Python, 2021)
+        import datetime
+The two methods the program uses are 
+- today() this method gets the current date
+- weekday() this method returns the days as an integer: Monday = 0, Tuesday = 1, Wednesday = 2, Thursday = 3, Friday = 4, Saturday = 5, Sunday = 6 (Python, 2021)
+Using this I was able to create a simple function where if todays date is <= 4 it's a weekday, otherwise it's the weekend.
+        '''
+        $python weekday.py
+        Yes, today is a weekday :(
+        '''
+
+
 
 ## References
 Hartnett, Kevin. (2019). Mathematician Proves Huge Result on ‘Dangerous’ Problem. Available: https://www.quantamagazine.org/mathematician-terence-tao-and-the-collatz-conjecture-20191211/. Last accessed 15th March 2021.
 HSE. (2021). BMI Chart (Kgs/m2 ) for use with the Weight Management Treatment Algorithm. 
 Available: https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf. Last accessed 14th March 2021.
 J.F. Alves, M.M. Graça, M.E. Sousa Dias∗ , J. Sousa Ramos. (2005). A linear algebra approach to the conjecture of Collatz. Linear Algebra and its Applications. 394 (0), p277-278.
-NHS. (2021). What is the body mass index (BMI)?. 
-Available: https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/. Last accessed 14th March 2021.
+NHS. (2021). What is the body mass index (BMI)?.Available: https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/. Last accessed 14th March 2021.
+Python. (2021). datetime — Basic date and time types. Available: https://docs.python.org/3/library/datetime.html. Last accessed 15th March 2021.
 W3Schools. (2021). Python slice() Function. Available: https://www.w3schools.com/python/ref_func_slice.asp. Last accessed 14th March 2021.
