@@ -91,8 +91,19 @@ Using this I was able to create a simple function where if todays date is <= 4 i
         Yes, today is a weekday :(
         '''
 
+## squareroot.py
+This program takes a positive floating-point number as input and outputs an approximation of its square root without using one of pythons built in math functions. I approached this problem by using the Newton Method. The algorithm for the Newton method is:
+ 1) Take a resonable guess at the appoximate root of the number
+ 2) Add this approximate root to the orignal number and divide by two (x_i := (x_i + n / x_i) / 2)
+ 3) Repeat step 2 until a percise value is reached. (Regmi, 2020)
+ The output is a float with one point after the decimal to match the output in the task description. 
+        '''
+        $python squareroot.py
+        Please enter a posistive number: 14.5
+        Using Newtons Method we estimate the squareroot of 14.5 to be 3.8
+        '''
 
-
+        
 ## References
 Hartnett, Kevin. (2019). Mathematician Proves Huge Result on ‘Dangerous’ Problem. Available: https://www.quantamagazine.org/mathematician-terence-tao-and-the-collatz-conjecture-20191211/. Last accessed 15th March 2021.
 HSE. (2021). BMI Chart (Kgs/m2 ) for use with the Weight Management Treatment Algorithm. 
@@ -100,4 +111,5 @@ Available: https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabete
 J.F. Alves, M.M. Graça, M.E. Sousa Dias∗ , J. Sousa Ramos. (2005). A linear algebra approach to the conjecture of Collatz. Linear Algebra and its Applications. 394 (0), p277-278.
 NHS. (2021). What is the body mass index (BMI)?.Available: https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/. Last accessed 14th March 2021.
 Python. (2021). datetime — Basic date and time types. Available: https://docs.python.org/3/library/datetime.html. Last accessed 15th March 2021.
+Regmi, S. (2020). Calculating the Square Root of a Number using the  Newton-Raphson Method [A How To Guide]. Available: https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo. Last accessed 15th March 2021.
 W3Schools. (2021). Python slice() Function. Available: https://www.w3schools.com/python/ref_func_slice.asp. Last accessed 14th March 2021.
