@@ -102,8 +102,20 @@ This program takes a positive floating-point number as input and outputs an appr
         Please enter a posistive number: 14.5
         Using Newtons Method we estimate the squareroot of 14.5 to be 3.8
         '''
+## es.py
+This program reads in a text file and outputs the number of times 'e' appears. It will take a filename from an argument on the command line.
+To do this the program asks the user to input the path to the text file they wish to read. This is because if the file to read is not in the same directory as the program the as the full path must be given (w3school, 2021). The program opens the text file in read mode and iteriates though each line counting the number of times 'e' appears. I used 
+        with open(filename, 'r') as f:
+as it means the file is automatically closed, thus, reducing the chance of an error. 
+The two methods the program uses are: 
+- strip() this method gets rid of any whitespace at the start and end of the text.
+- lower() this method converts all letters into lowercase. I did this so capitalized 'E' would be inculded in the count.
+        '''
+        $python es.py
+        Enter the path of the text file you wish to open: es.py_test.txt
+        23
+        '''
 
-        
 ## References
 Hartnett, Kevin. (2019). Mathematician Proves Huge Result on ‘Dangerous’ Problem. Available: https://www.quantamagazine.org/mathematician-terence-tao-and-the-collatz-conjecture-20191211/. Last accessed 15th March 2021.
 HSE. (2021). BMI Chart (Kgs/m2 ) for use with the Weight Management Treatment Algorithm. 
@@ -112,4 +124,5 @@ J.F. Alves, M.M. Graça, M.E. Sousa Dias∗ , J. Sousa Ramos. (2005). A linear a
 NHS. (2021). What is the body mass index (BMI)?.Available: https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/. Last accessed 14th March 2021.
 Python. (2021). datetime — Basic date and time types. Available: https://docs.python.org/3/library/datetime.html. Last accessed 15th March 2021.
 Regmi, S. (2020). Calculating the Square Root of a Number using the  Newton-Raphson Method [A How To Guide]. Available: https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo. Last accessed 15th March 2021.
+w3schools. (2021). Python File Open. Available: https://www.w3schools.com/python/python_file_open.asp. Last accessed 15th March 2021.
 W3Schools. (2021). Python slice() Function. Available: https://www.w3schools.com/python/ref_func_slice.asp. Last accessed 14th March 2021.
