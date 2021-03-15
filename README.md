@@ -24,12 +24,12 @@ The example output in the task criteria was formatted to 2 decimal places hence 
 
 $python bmi.py
 '''
->>> Hello, what is your name? Maeve
->>> Katie, please enter your height in cm: 167
->>> Now enter your weight in kilograms: 62
+Hello, what is your name? Maeve
+Maeve, please enter your height in cm: 167
+Now enter your weight in kilograms: 62
 
->>> Katie, your BMI is 22.23.
->>>Please refernce the following chart with your result to identify your category:
+Maeve, your BMI is 22.23.
+Please refernce the following chart with your result to identify your category:
 
         - Underweight = < 18.5
         - Healthy Weight = 18.5–24.9
@@ -38,10 +38,10 @@ $python bmi.py
         - Obese Class II = 35-39.9
         - Obese Class III = > 40
 
->>> For more information about BMI and weight management vist the HSE website at: https://tinyurl.com/6uvm5jr3
+For more information about BMI and weight management vist the HSE website at: https://tinyurl.com/6uvm5jr3
 '''
 
-# second_string.py
+## second_string.py
 The goal of this program is to take an input of a string and print out every second letter in reverse order.
 To achieve this I used slicing. The slice method takes three arguments; [starting value : end value : value to move by] (W3Schools, 2021)
 Since the objective is reverse the full string we don't have to enter specfic start and end values. 
@@ -53,15 +53,37 @@ The program will move through the revered string and print every second letter
 
 $python second_string.py
     '''
-    >>>Please enter a sentance: this is an example
-    >>> You have entered:
+    Please enter a sentance: this is an example
+    You have entered:
                     this is an example
-    >>>Your new string is:
+    Your new string is:
                     epaen ish
     '''
+
+## collatz.py
+This program asks the user to input a positive integer and will output the successive values of the following calculation. The program will calculate the next value by taking the current value and, if it even, divide it by two, but if odd, multiply it by three and add one. It will continue this calculation until the value is one. 
+The task description didn't specify putting the code into a function, I decided to do this after learning about them in week 6.
+The name of the program in the task description lead me to researching the collatz sequence also know as Collatz conjecture, was purposed by German mathematician Lothar Collatz. The formula states "... that any orbit for the iteration function f (n) = (3n + 1)/2, for n odd, and f (n) = n/2, for n even, is always attracted to the value 1." (J.F. Alves et. al., 2005). That is all posistive integers used in this process it will eventually converge to one. To date it is still considered unsolved (Hartnett, 2019).
+         '''
+        $ python .\collatz.py
+        Please enter a posistive integer: 12
+        6
+        3
+        10
+        5
+        16
+        8
+        4
+        2
+        1
+        '''
+
+
 ## References
+Hartnett, Kevin. (2019). Mathematician Proves Huge Result on ‘Dangerous’ Problem. Available: https://www.quantamagazine.org/mathematician-terence-tao-and-the-collatz-conjecture-20191211/. Last accessed 15th March 2021.
 HSE. (2021). BMI Chart (Kgs/m2 ) for use with the Weight Management Treatment Algorithm. 
 Available: https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf. Last accessed 14th March 2021.
+J.F. Alves, M.M. Graça, M.E. Sousa Dias∗ , J. Sousa Ramos. (2005). A linear algebra approach to the conjecture of Collatz. Linear Algebra and its Applications. 394 (0), p277-278.
 NHS. (2021). What is the body mass index (BMI)?. 
 Available: https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/. Last accessed 14th March 2021.
 W3Schools. (2021). Python slice() Function. Available: https://www.w3schools.com/python/ref_func_slice.asp. Last accessed 14th March 2021.
