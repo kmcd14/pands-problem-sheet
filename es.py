@@ -3,12 +3,14 @@
 # It will take a filename from an argument on the command line.
 # Author: Katie Mc Donald
 
+# Imports sys module
+import sys
+
 # Counter to keep track of the number of times 'e' appears
 e_count = 0
-# Gets the user to input the path directory of the text file
-file_to_read = input('Enter the path of the text file you wish to open: ')
-# Assigns the input to a new variable 
-filename = file_to_read
+
+# First argument is the script name so [1] is the next element
+filename = sys.argv[1] # In this case the text file
 
 # Opening the variable filename in read mode
 with open(filename, 'r') as f:

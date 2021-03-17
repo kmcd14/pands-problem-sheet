@@ -137,7 +137,13 @@ This program takes a positive floating-point number as input and outputs an appr
 <br>
 <h2 style=color:#B0E0E6><b><u><p id="es.py">Week 07 - es.py</b></u></p></h2>
 This program reads in a text file and outputs the number of times 'e' appears. It will take a filename from an argument on the command line.
-To do this the program asks the user to input the path to the text file they wish to read. This is because if the file to read is not in the same directory as the program the as the full path must be given (w3school, 2021). The program opens the text file in read mode and iteriates though each line counting the number of times 'e' appears. I used 
+The module used for this program is sys. This module "... provides access to any command-line arguments via the sys.argv."(Tutorials Point, 2021). I gave the filename variable the argument[1] as the script name is [0].
+
+``` 
+    import sys
+``` 
+
+The program opens the text file in read mode and iteriates though each line counting the number of times 'e' appears. I used 
   
   ``` 
       with open(filename, 'r') as f:
@@ -149,8 +155,7 @@ The two methods the program uses are:
 - lower() this method converts all letters into lowercase. I did this so capitalized 'E' would be inculded in the count.
 
  ```
-    $python es.py
-    Enter the path of the text file you wish to open: es.py_test.txt
+    $python es.py test.txt
     23
 ```
 </br>
@@ -203,6 +208,6 @@ Regmi, S. (2020). Calculating the Square Root of a Number using the  Newton-Ra
 
 Stojiljković, M. (2021). NumPy arange(): How to Use np.arange(). Available: https://realpython.com/how-to-use-numpy-arange/. Last accessed 15th March 2021.
 
-w3schools. (2021). Python File Open. Available: https://www.w3schools.com/python/python_file_open.asp. Last accessed 15th March 2021.
+Tutorials Point. (2021). Python - Command Line Arguments. Available: https://www.tutorialspoint.com/python/python_command_line_arguments.htm. Last accessed 17th March 2021.
 
 W3Schools. (2021). Python slice() Function. Available: https://www.w3schools.com/python/ref_func_slice.asp. Last accessed 14th March 2021.
