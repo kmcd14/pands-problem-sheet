@@ -18,6 +18,7 @@ This is a ReadMe for the seven weekly tasks assigned for GMIT Diploma in Data An
     <li><a href="#squareroot.py">Week 06 - squareroot</a></li>
     <li><a href="#es.py">Week 07 - es</a></li>
     <li><a href="#plottask.py">Week 08 - plottask</a></li>
+    <li><a href="#Technologies_Used">Technologies Used</a></li>
     <li><a href="#References">References</a></li>
   </ol>
   
@@ -185,8 +186,24 @@ The methods the program uses are:
 <br>
 
 ---
+---
+<h2><b><u><p id='Technologies_Used'> Technologies Used:</b></u></p></h2>
+
+
+
+<b><u>Google Docs:</u></b> an online word processor used to write my documentation before transfering into this README file. https://www.google.com/docs/about/
+
+<b><u>Anaconda:</u></b> the easiest way to perfrom Python data science machine learning on Windows, Linux and Mac OS. These programs where created using Version 4.9.2. https://www.anaconda.com/distribution/
+
+<b><u>Python:</u></b> an interpreted, object-oriented, high-level programming language with dynamic semantics. This programs where created using Version 3.8.5.  https://www.python.org/
+
+<b><u>Visual Studio Code:</u></b> An open source coding editor. https://code.visualstudio.com/
+
+<b><u>GitHub:</u></b> is a code hosting platform for collaboration and version control. https://github.com/
+
+---
+---
 </br>
-<br>
 
 <h1 style=color:#DDA0DD><b><u><p id="References"> References</b></u></p></h1>
 Alves, J., Graça, M., Dias, M., Ramos, J. (2005). A linear algebra approach to the conjecture of Collatz. Linear Algebra and its Applications. 394 (0), p277-278.
