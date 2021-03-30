@@ -181,6 +181,8 @@ The methods the program uses are:
 - plt.grid() adds a grid to the plot
 - plt.xticks() and .yticks() adds ticks along the X and Y axes
 - plt.show() shows the plot when the program is run. I used this instead of save as the task description didn't state to save the plot.
+
+ <img src='plottask_output.png'>
 </br>
 
 <br>
